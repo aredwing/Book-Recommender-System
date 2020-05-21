@@ -10,7 +10,7 @@ The data for this project (all books on Wikipedia) has been collected from Wikip
 
 Next is an overview of the work related to this topic, and then the theoretical explanation behind LDA to lay the foundation for our implementation. Finally, we will study the complete code and introduce the specific results of the algorithm, and discuss some of its shortcomings.
 
-## III. Topic Modeling
+## II. Topic Modeling
 
 We want to build a recommender system in order to recommend books. For example, if I read a Sherlock Holmes book, the system would recommend me equivalent books like the Orient Express or the Murder at the Vicarage. To do this, we would like to extract features (topics) to obtain something like:
 
@@ -20,7 +20,7 @@ We want to build a recommender system in order to recommend books. For example, 
 And we compute the distance between extracted features. We can use either Euclidian distance (the lower the better) or Cosine similarity (the higher the better)
 
 - **Euclidian distance:** $||a - b||_2 = \sqrt{\sum_i{(a_i - b_i)^2}} \approx 0.004$
-- **Cosine similarity:** \div{a^Tb}{||a||||b|| = cos(a, b) \approx 0.997}
+- **Cosine similarity:** $\frac{a^Tb}{||a||||b||} = cos(a, b) \approx 0.997$
 
 Then, we can define a document (book) as a *distribution over topics*. We can also define a topic as a *distribution over words*.
 
@@ -28,6 +28,10 @@ Eg.
 - **Sport:** 20% Football + 10% Hockey + 5% Goal + 1% Score + ...
 - **Economy:** 24% Money + 9% Dollar + 7% Euro + 3% Bank + ...
 - **Politics:** 10% President + 4% USA + 3% Union + 1% Law + ...
+
+So, the goal of topic modeling is to *construct topics*, and *assign them to texts*.
+
+## III. Latent Dirichlet Allocation
 
 ## IV. Implementation
 
