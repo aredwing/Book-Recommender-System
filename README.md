@@ -4,7 +4,7 @@
 
 The  goal of this project is to build a recommendation engine that aims to help users find books which might be interesting for them based on their summaries. We'll do this by applying Latent Dirichlet Allocation - LDA algorithm.
 
->> Latent Dirichlet Allocation is a type of unobserved learning algorithm in which topics are inferred from a dictionary of text corpora whose structures are not known (are latent). The practical use of such an algorithm is to solve the cold-start problem, whereby analytics can be done on texts to derive similarities in the dictionary's corpses, and further be expanded to others outside the original scope - all without user input, which is often an early stumbling block for businesses that do not meet early usage quotas to derive needed analysis.
+> **Latent Dirichlet Allocation** is a type of unobserved learning algorithm in which topics are inferred from a dictionary of text corpora whose structures are not known (are latent). The practical use of such an algorithm is to solve the cold-start problem, whereby analytics can be done on texts to derive similarities in the dictionary's corpses, and further be expanded to others outside the original scope - all without user input, which is often an early stumbling block for businesses that do not meet early usage quotas to derive needed analysis.
 
 The data for the project [...]
 
